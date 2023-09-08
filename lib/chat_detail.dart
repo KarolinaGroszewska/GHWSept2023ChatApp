@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'chatModels.dart';
+import 'chat_models.dart';
 
 class ChatDetailPage extends StatefulWidget {
+  const ChatDetailPage({super.key});
   // String name;
   // String messageText;
   // String imageUrl;
@@ -90,12 +91,12 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
           ListView.builder(
             itemCount: messages.length,
             shrinkWrap: true,
-            padding: EdgeInsets.only(top: 10, bottom: 10),
-            physics: NeverScrollableScrollPhysics(),
+            padding: const EdgeInsets.only(top: 10, bottom: 10),
+            physics: const NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
               return Container(
                 padding:
-                    EdgeInsets.only(left: 14, right: 14, top: 10, bottom: 10),
+                    const EdgeInsets.only(left: 14, right: 14, top: 10, bottom: 10),
                 child: Align(
                   alignment: (messages[index].messageType == "receiver"
                       ? Alignment.topLeft

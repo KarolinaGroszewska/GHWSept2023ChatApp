@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'chatDetail.dart';
+import 'chat_detail.dart';
 
-// ignore: must_be_immutable
-class ConversationList extends StatefulWidget {
+class ConversationList extends StatelessWidget {
   String name;
   String messageText;
   String imageUrl;
@@ -16,17 +15,11 @@ class ConversationList extends StatefulWidget {
       required this.time,
       required this.isMessageRead});
   @override
-  // ignore: library_private_types_in_public_api
-  _ConversationListState createState() => _ConversationListState();
-}
-
-class _ConversationListState extends State<ConversationList> {
-  @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(builder: (context) {
-          return ChatDetailPage();
+          return const ChatDetailPage();
         }));
       },
       child: Container(
@@ -38,7 +31,7 @@ class _ConversationListState extends State<ConversationList> {
               child: Row(
                 children: <Widget>[
                   CircleAvatar(
-                    backgroundImage: NetworkImage(widget.imageUrl),
+                    backgroundImage: NetworkImage(imageUrl),
                     maxRadius: 30,
                   ),
                   const SizedBox(
@@ -51,7 +44,7 @@ class _ConversationListState extends State<ConversationList> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            widget.name,
+                            name,
                             style: const TextStyle(
                                 fontSize: 16,
                                 fontWeight: FontWeight.bold,
@@ -61,7 +54,7 @@ class _ConversationListState extends State<ConversationList> {
                             height: 6,
                           ),
                           Text(
-                            widget.messageText,
+                            messageText,
                             style: const TextStyle(
                                 fontSize: 13,
                                 fontWeight: FontWeight.bold,
@@ -75,7 +68,7 @@ class _ConversationListState extends State<ConversationList> {
               ),
             ),
             Text(
-              widget.time,
+              time,
               style: const TextStyle(fontSize: 12, color: Color(0xFFF7F0F5)),
             ),
           ],

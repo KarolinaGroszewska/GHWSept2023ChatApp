@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'metamask_provider.dart';
-import 'chatModels.dart';
-import 'conversationList.dart';
+import 'chat_models.dart';
+import 'conversation_list.dart';
 
 void main() {
   runApp(
@@ -183,7 +183,7 @@ class MyApp extends StatelessWidget {
                       MaterialButton(
                           onPressed: () =>
                               context.read<MetaMaskProvider>().connect(),
-                          color: Color(0xFFF7F0F5),
+                          color: const Color(0xFFF7F0F5),
                           padding: const EdgeInsets.all(0),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
