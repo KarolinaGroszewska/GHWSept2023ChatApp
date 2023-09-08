@@ -17,12 +17,12 @@ class MyApp extends StatelessWidget {
     List<ChatUsers> chatUsers = [
       ChatUsers(
           name: "Jane Russel",
-          messageText: "Awesome setup",
+          messageText: "Awesome setup!! ",
           imageURL: "images/userImage1.jpeg",
           time: "Now"),
       ChatUsers(
           name: "Gladys Murphy",
-          messageText: "That's great",
+          messageText: "That's great :)",
           imageURL: "images/userImage2.jpeg",
           time: "Yesterday"),
       ChatUsers(
@@ -32,17 +32,17 @@ class MyApp extends StatelessWidget {
           time: "31 Mar"),
       ChatUsers(
           name: "Philip Fox",
-          messageText: "Busy! Call me in 20 ",
+          messageText: "Busy! Call me in 20. ",
           imageURL: "images/userImage4.jpeg",
           time: "28 Mar"),
       ChatUsers(
           name: "Debra Hawkins",
-          messageText: "Thanks, it's awesome",
+          messageText: "Thanks, it's awesome :)",
           imageURL: "images/userImage5.jpeg",
           time: "23 Mar"),
       ChatUsers(
           name: "Jacob Pena",
-          messageText: "will update you in evening",
+          messageText: "will update you in evening.",
           imageURL: "images/userImage6.jpeg",
           time: "17 Mar"),
       ChatUsers(

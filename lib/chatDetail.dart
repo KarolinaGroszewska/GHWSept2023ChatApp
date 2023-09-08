@@ -14,14 +14,14 @@ class ChatDetailPage extends StatefulWidget {
 
 class _ChatDetailPageState extends State<ChatDetailPage> {
   List<ChatMessage> messages = [
-    ChatMessage(messageContent: "Hello, Will", messageType: "receiver"),
+    ChatMessage(messageContent: "Hello, Will!", messageType: "receiver"),
     ChatMessage(messageContent: "How have you been?", messageType: "receiver"),
     ChatMessage(
-        messageContent: "Hey Kriss, I am doing fine dude. wbu?",
+        messageContent: "Hey Kriss, I am doing fine. How are ya?",
         messageType: "sender"),
-    ChatMessage(messageContent: "ehhhh, doing OK.", messageType: "receiver"),
+    ChatMessage(messageContent: "Ehhhh, doing ok.", messageType: "receiver"),
     ChatMessage(
-        messageContent: "Is there any thing wrong?", messageType: "sender"),
+        messageContent: "Anything wrong?", messageType: "sender"),
   ];
   @override
   Widget build(BuildContext context) {
